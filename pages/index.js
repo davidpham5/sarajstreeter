@@ -7,7 +7,8 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Sara J. Streeter</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../public/favicon.ico" />
+        <link href="../styles/global.css" rel="stylesheet"></link>
       </Head>
 
       <main>
