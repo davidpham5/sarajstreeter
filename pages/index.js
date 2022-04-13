@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="Sara J. Streeter" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          A Writer.
         </p>
       </main>
 
