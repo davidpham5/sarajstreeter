@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
         <title>Sara J. Streeter</title>
         <link rel="icon" href="../public/favicon.ico" />
-        <link href="../styles/global.css" rel="stylesheet"></link>
       </Head>
 
       <main>
@@ -17,8 +16,6 @@ export default function Home() {
           A Writer.
         </p>
       </main>
-
-      <Footer />
     </div>
   )
 }
