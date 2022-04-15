@@ -1,3 +1,3 @@
 export default function booksPage () {
-  return <main>Books I Love</main>
+  return <div className="container"><main>Books I Love</main></div>
 }
