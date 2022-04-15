@@ -1,4 +1,3 @@
-import Footer from '@components/Footer'
 import Header from '@components/Header'
 import Head from 'next/head'
 
@@ -11,10 +10,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Sara J. Streeter" />
-        <p className="description">
-          A Writer.
-        </p>
+        <Header title="Listening" />
+        <p>Clap  your hands if you're working too hard</p>
       </main>
     </div>
   )
