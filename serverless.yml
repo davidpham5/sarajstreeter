@@ -19,6 +19,8 @@ service: serverless
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
 frameworkVersion: '2'
+custom:
+  secrets: ${file(secrets.json)}
 
 provider:
   name: aws
@@ -26,9 +28,9 @@ provider:
   lambdaHashingVersion: 20201221
 # you can overwrite defaults here
   region: us-east-1
-  profile: sjstreeter
+  profile: ${self:custom.secrets.PROFILE}
   environment:
-    SENDER_EMAIL: david.pham@hey.com
+    SENDER_EMAIL: ${self:custom.secrets.SENDER_EMAIL}
 # you can add statements to the Lambda function's IAM Role here
   iam:
    role:

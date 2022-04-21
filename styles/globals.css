@@ -23,7 +23,7 @@ code {
 }
 
 .container {
-  height: 80vh;
+  height: 59vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

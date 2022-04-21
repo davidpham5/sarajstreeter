@@ -54,3 +54,4 @@ var/
 # Serverless directories
 .serverless
 
+secrets.json
