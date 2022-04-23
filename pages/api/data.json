@@ -11,7 +11,12 @@
   },
   "writing": {
     "title": "Writing",
-    "content": ["/ Home is a Feeling.Hippocampus.Fall 2022", "/ My Weapon.Gasher.Summer 2022", "/ River Full of Stars.Adoptee Voices.Spring 2022", "/ Erased.Fatal Flaw.Spring 2022", "/ Message in a Bottle.Adoptee Voices.Fall 2022 "]
+    "content": [
+      {"title":"/ Home is a Feeling.Hippocampus.Fall 2022", "link": ""},
+      {"title":"/ My Weapon.Gasher.Summer 2022", "link": ""},
+      {"title":"/ River Full of Stars.Adoptee Voices.Spring 2022", "link": ""},
+      {"title": "/ Erased.Fatal Flaw.Spring 2022", "link": ""},
+      {"title": "/ Message in a Bottle.Adoptee Voices.Fall 2022", "link": ""}]
   },
   "stayInTouch": {
     "title": [

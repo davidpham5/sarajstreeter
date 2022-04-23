@@ -23,13 +23,13 @@ export default function Home() {
         <section className="work">
           <div className='flex flex-col mb-12 sm:mb-96'>
             <Header title={content.writing.title} />
-            <Card content={content.writing} />
+            <Card content={content.writing.content} />
           </div>
 
           <div className="flex flex-col">
             <Header title={content.about.title}/>
             <div className='max-w-3xl'>
-              <Card content={content.about} />
+              <Card content={content.about.content} />
             </div>
           </div>
         </section>
