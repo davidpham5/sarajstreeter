@@ -12,11 +12,11 @@
   "writing": {
     "title": "Writing",
     "content": [
-      {"title":"/ Home is a Feeling.Hippocampus.Fall 2022", "link": ""},
-      {"title":"/ My Weapon.Gasher.Summer 2022", "link": ""},
-      {"title":"/ River Full of Stars.Adoptee Voices.Spring 2022", "link": ""},
-      {"title": "/ Erased.Fatal Flaw.Spring 2022", "link": ""},
-      {"title": "/ Message in a Bottle.Adoptee Voices.Fall 2022", "link": ""}]
+      {"title":"/ Home is a Feeling.Hippocampus.Fall 2022", "link": "https://hippocampusmagazine.com/"},
+      {"title":"/ My Weapon.Gasher.Summer 2022", "link": "https://www.gasherjournal.com/"},
+      {"title":"/ River Full of Stars.Adoptee Voices.Spring 2022", "link": "https://adoptee-voices.com/"},
+      {"title": "/ Erased.Fatal Flaw.Spring 2022", "link": "https://www.fatalflawlit.com/essay-pieces/erased"},
+      {"title": "/ Message in a Bottle.Adoptee Voices.Fall 2022", "link": "https://adoptee-voices.com/ezine-mirror-message-in-a-bottle/"}]
   },
   "stayInTouch": {
     "title": [
