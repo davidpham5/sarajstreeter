@@ -23,14 +23,14 @@
       "Stay in Touch"
     ],
     "content": {
-      "email": "streetersj@gmail.com",
-      "twitter": "@kadmom1",
-      "clubhouse": "@streetersj",
-      "linkedin": "linkedin.com/in/streetersj"
+      "email": {"title": "streetersj@gmail.com", "link": "mailto:streetersj@gmail.com"},
+      "twitter": {"title": "@kadmom1", "link": "https://twitter.com/kadmom1"},
+      "clubhouse": {"title": "@streetersj", "link": "https://www.clubhouse.com/@streetstreet"},
+      "linkedin": {"title": "linkedin.com/in/streetersj", "link":"https://www.linkedin.com/in/sara-streeter-16629a11/"}
     }
   },
   "about": {
     "title":"About",
-    "content": ["Sara J. Streeter. Hea Sook Han. She/her/they. Transracial, intercountry adoptee. Korean. American. In partial reunion since 2017. Adopted daughter. Biological daughter. Youngest of six Korean sisters. Only half sister to three American sisters. Biological mother.", "Also: Marylander. Dog mom. Music lover. Recovering interior designer. Voracious reader."]
+    "content": "<p class='mb-4'>Sara J. Streeter. Hea Sook Han. She/her/they. Transracial, intercountry adoptee. Korean. American. In partial reunion since 2017. Adopted daughter. Biological daughter. Youngest of six Korean sisters. Only half sister to three American sisters. Biological mother.</p> <p>Also: Marylander. <a class='hover:underline decoration-indigo-700' href='https://open.spotify.com/playlist/3Ds35NqYR7iBZG5FvNja8F?si=64e1d15a995c4c97'>Music lover.</a> Dog mom. Recovering interior designer. <a class='hover:underline decoration-indigo-700' href='https://bookshop.org/shop/sarajstreeter'>Voracious reader</a></p>"
   }
 }

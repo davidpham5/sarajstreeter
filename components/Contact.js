@@ -1,5 +1,4 @@
 export default function Contact ({content}) {
-  console.log(content);
   return (
     <div className="">
       <table className="table-auto">
@@ -8,7 +7,7 @@ export default function Contact ({content}) {
             return (
               <tr key={index}>
                 <td className="text-slate-500 text-xs font-bold min-w-[110px]">{item.toUpperCase()}</td>
-                <td>{content[item]}</td>
+                <td><a href={content[item].link} target="_blank">{content[item].title}</a></td>
               </tr>
             )
         })}
