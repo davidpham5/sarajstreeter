@@ -5,7 +5,7 @@ export default function Intro ({content}) {
     <div className="flex flex-col">
       {content.title.map((item, index) => {
         return (
-          <h2 className="text-4xl">
+          <h2 className="text-4xl" key={index}>
             {item}
           </h2>
         )
@@ -13,7 +13,7 @@ export default function Intro ({content}) {
       <ul>
       {content.content.map((item, index) => {
         return (
-          <li className="flex text-xl ml-56 tracking-wide">
+          <li className="flex text-xl ml-56 tracking-wide" key={index}>
             {item}
           </li>
         )

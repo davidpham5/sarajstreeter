@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col justify-center content-center">
       <Head>
         <title>Sara J. Streeter</title>
-        <link rel="icon" href="../public/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="mx-20 flex flex-col sm:grid grid-cols-2 z-10">
         <aside className="">
