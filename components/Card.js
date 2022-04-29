@@ -1,10 +1,8 @@
 
-import Header from "./Header";
-import Link from 'next/link'
 export default function Card ({content}) {
   return (
     <div className="">
-      <div className="w-full">
+      <div className="w-full max-w-3xl">
         {
           Array.isArray(content)
             ? content.map((item, index) => {
@@ -12,7 +10,7 @@ export default function Card ({content}) {
                 ? <span className="hover:underline decoration-indigo-700" key={index}><a href={item.link} target="_blank" >{item.title}</a></span>
                 : <p className="mb-4" key={index}>{item}</p>
               })
-            : <div dangerouslySetInnerHTML={{__html: content }}></div>
+            : <div className='text-2xl leading-[30px] tracking-[1.25px]' dangerouslySetInnerHTML={{__html: content }}></div>
         }
       </div>
     </div>
