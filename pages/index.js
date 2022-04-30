@@ -1,5 +1,5 @@
 import Card from '@components/Card'
-import Contact from '@components/Contact'
+import Footer from '@components/Footer'
 import Header from '@components/Header'
 import Intro from '@components/Intro'
 import Head from 'next/head'
@@ -14,10 +14,11 @@ export default function Home() {
       </Head>
       <div className="mx-20 flex flex-col sm:grid grid-cols-2 z-10">
         <aside className="">
-          <div className='w-1/2 h-full m-0 flex flex-col space-between'>
+          <div className='w-1/2 h-full m-0 flex flex-col justify-between'>
             <div className='mb-12 sm:mb-64'>
               <Intro content={content.intro} />
             </div>
+            <Footer />
           </div>
         </aside>
         <section className="work">

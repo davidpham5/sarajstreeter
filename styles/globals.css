@@ -30,3 +30,19 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.leading-60px {
+  line-height: 60px;
+}
+.leading-30px {
+  line-height: 30px;
+}
+
+.tracking-one-and-half {
+  letter-spacing: 1.5px;
+}
+
+.decoration-A73090 {
+  text-decoration: underline;
+  text-decoration-color: #A73090;
+}
