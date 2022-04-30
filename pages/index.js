@@ -37,8 +37,8 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="flex sm:hidden mt-12">
-      <Footer />
+      <div className="flex sm:hidden mt-12 relative z-10">
+        <Footer />
       </div>
     </div>
   )
