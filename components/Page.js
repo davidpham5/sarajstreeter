@@ -1,16 +1,17 @@
-import Footer from './Footer';
-
+import Image from 'next/image';
+import sjs_shape from '../public/sjs_shape.svg';
 
 export default function Page({ children }) {
   return (
-    <div className="">
-      <div className="w-full relative">
-        <div className='absolute w-full h-full m-auto z-0 flex flex-col justify-center content-center items-center self-center'>
-          <div className='circle w-[800px] h-[800px] mt-20 bg-gradient-to-r from-[#E5A9EE] to-[#C3DC4D] rounded-full'></div>
-        </div>
-        <main className=''>{children}</main>
+    <div className="relative">
+      <div className="w-full">
+        <main className='py-20 px-4 lg:flex flex-col justify-center items-center'>{children}</main>
       </div>
-
+      <div className='absolute top-0 flex flex-col justify-center w-full h-full m-auto'>
+        <div className="circle w-3/4 h-3/4 flex flex-col self-center">
+          <Image src={sjs_shape} layout="responsive"/>
+        </div>
+      </div>
     </div>
   );
 }

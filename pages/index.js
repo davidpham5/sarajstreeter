@@ -7,22 +7,24 @@ import content from './api/data.json'
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center content-center">
+    <div className="flex flex-col justify-center content-center px-4">
       <Head>
         <title>Sara J. Streeter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="mx-20 flex flex-col sm:grid grid-cols-2 z-10">
-        <aside className="">
-          <div className='w-1/2 h-full m-0 flex flex-col justify-between'>
+      <div className="lg:mx-20 flex flex-col sm:grid grid-cols-2 z-10">
+        <aside className="_intro _footer">
+          <div className='w-full lg:w-1/2 h-full m-0 flex flex-col justify-between'>
             <div className='mb-12 sm:mb-64'>
               <Intro content={content.intro} />
             </div>
-            <Footer />
+            <div className='hidden md:flex'>
+              <Footer/>
+            </div>
           </div>
         </aside>
         <section className="work">
-          <div className='flex flex-col mb-12 sm:mb-96'>
+          <div className='flex flex-col mb-12 sm:mb-28'>
             <Header title={content.writing.title} />
             <Card content={content.writing.content} />
           </div>
@@ -34,6 +36,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </div>
+      <div className="flex sm:hidden mt-12">
+      <Footer />
       </div>
     </div>
   )

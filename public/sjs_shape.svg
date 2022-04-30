@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="699px" height="699px" viewBox="0 0 699 699" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>shape-of-sjs</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-9h0ry8nu6x-1">
+            <stop stop-color="#E5A9EE" offset="0%"></stop>
+            <stop stop-color="#C3DC4D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="url(#linearGradient-9h0ry8nu6x-1)" cx="349.5" cy="349.5" r="349.5"></circle>
+    </g>
+</svg>

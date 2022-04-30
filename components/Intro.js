@@ -13,7 +13,7 @@ export default function Intro ({content}) {
       <ul>
       {content.content.map((item, index) => {
         return (
-          <li className="flex text-xl ml-56 tracking-wide" key={index}>
+          <li className="flex text-xl lg:ml-56 tracking-wide" key={index}>
             {item}
           </li>
         )
