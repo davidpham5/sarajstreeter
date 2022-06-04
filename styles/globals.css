@@ -46,3 +46,7 @@ code {
   text-decoration: underline;
   text-decoration-color: #A73090;
 }
+
+.italic {
+  font-style: italic;
+}

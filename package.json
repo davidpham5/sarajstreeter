@@ -18,7 +18,7 @@
     "@netlify/plugin-nextjs": "^4.2.5",
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.24",
-    "serverless-domain-manager": "^3.3.1"
+    "serverless-domain-manager": "^3.3.1",
+    "tailwindcss": "^3.0.24"
   }
 }
