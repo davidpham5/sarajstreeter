@@ -2,7 +2,7 @@
 export default function Card ({content}) {
   return (
     <div className="">
-      <div className="w-full max-w-3xl">
+      <div className="w-full max-w-4xl">
         {
           Array.isArray(content)
             ? content.map((item, index) => {
