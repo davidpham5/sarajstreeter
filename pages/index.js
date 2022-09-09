@@ -24,13 +24,13 @@ export default function Home() {
           </div>
         </aside>
         <section className="work">
-          <div className="w-full -ml-64">
-            <div className='flex mb-12 sm:mb-28'>
-              <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row-reverse mr-2">Published Work</h1>
+          <div className="w-full sm:-ml-64">
+            <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
+              <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Published Work</h1>
               <Card content={content.writing.content} />
             </div>
 
-            <div className='flex mb-12 sm:mb-28'>
+            <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
               <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase">Forthcoming Work</h1>
               <Card content={content.writing.forthComing} />
             </div>
