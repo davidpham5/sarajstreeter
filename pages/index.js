@@ -35,7 +35,7 @@ export default function Home() {
               <Card content={content.writing.forthComing} />
             </div>
             <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
-              <h1 className="min-w-[170px] mt-3 text-2xl text-black mb-2 uppercase">Elsewhere</h1>
+              <h1 className="min-w-[240px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Elsewhere</h1>
             <Card content={content.writing.interviews} />
           </div>
           </div>
