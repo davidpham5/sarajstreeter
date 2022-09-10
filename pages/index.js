@@ -34,7 +34,11 @@ export default function Home() {
               <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase">Forthcoming Work</h1>
               <Card content={content.writing.forthComing} />
             </div>
-            </div>
+            <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
+              <h1 className="min-w-[170px] mt-3 text-2xl text-black mb-2 uppercase">Elsewhere</h1>
+            <Card content={content.writing.interviews} />
+          </div>
+          </div>
           <div className="flex flex-col ml-2">
             <Header title={content.about.title}/>
             <div className='max-w-3xl'>
