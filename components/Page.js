@@ -14,7 +14,9 @@ export default function Page({ children }) {
         </div>
       </div>
       <div className='w-full flex justify-center mt-20'>
-        <Credit />
+        <Credit />.
+        {" "}
+        Copyright © {new Date().getFullYear()}
       </div>
     </div>
   );
