@@ -12,6 +12,7 @@ export default function Home() {
         <title>Sara J. Streeter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className="lg:mx-20 flex flex-col sm:grid grid-cols-2 z-10">
         <aside className="_intro _footer">
           <div className='w-full lg:w-1/2 h-full m-0 flex flex-col justify-between'>

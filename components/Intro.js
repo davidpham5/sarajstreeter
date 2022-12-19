@@ -1,4 +1,3 @@
-import { content } from "tailwind.config";
 
 export default function Intro ({content}) {
   return (
