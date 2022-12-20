@@ -7,9 +7,10 @@ import Credit from './Credit';
 export default function Page({ children }) {
   return (
     <div>
-      {
-        // <Banner link={content.stayInTouch.content.substack.link} title={"Sign up for my newsletter on Substack"} />
-      }
+      <Banner
+        link={content.stayInTouch.content.substack.link}
+        title={"Sign up for my newsletter on Substack"}
+      />
       <div className="relative">
         <div className="w-full">
           <main className='py-20 px-4 lg:flex flex-col justify-center items-center'>{children}</main>
