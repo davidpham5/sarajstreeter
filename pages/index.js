@@ -34,11 +34,13 @@ export default function Home() {
               <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Published Work</h1>
               <Card content={content.writing.content} />
             </div>
+            {content.writing.forthComing > 0 && (
+              <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
+                <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase mr-1">Forthcoming Work</h1>
+                <Card content={content.writing.forthComing} />
+              </div>
+            )}
 
-            <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
-              <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase mr-1">Forthcoming Work</h1>
-              <Card content={content.writing.forthComing} />
-            </div>
             <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
               <h1 className="min-w-[240px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Elsewhere</h1>
             <Card content={content.writing.interviews} />
