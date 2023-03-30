@@ -2,10 +2,13 @@ import Card from '@components/Card'
 import Footer from '@components/Footer'
 import Header from '@components/Header'
 import Intro from '@components/Intro'
+import client from 'lib/sanityClient'
 import Head from 'next/head'
 import content from './api/data.json'
 
-export default function Home() {
+export default function Home({publishedWork}) {
+  console.log({publishedWork})
+
   return (
     <div className="flex flex-col justify-center content-center px-4">
       <Head>
@@ -59,4 +62,13 @@ export default function Home() {
       </div>
     </div>
   )
+}
+
+// fetch published work from Sanity
+export async function getStaticProps() {
+  const publishedWork = await client.fetch(`*[_type == "published-work"]{title, url, publishedAt, publication, body}`)
+
+  return {
+    props: {publishedWork},
+  }
 }
