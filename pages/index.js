@@ -1,3 +1,4 @@
+import BoldList from '@components/BoldList'
 import Card from '@components/Card'
 import Footer from '@components/Footer'
 import Header from '@components/Header'
@@ -7,8 +8,6 @@ import Head from 'next/head'
 import content from './api/data.json'
 
 export default function Home({publishedWork}) {
-  console.log({publishedWork})
-
   return (
     <div className="flex flex-col justify-center content-center px-4">
       <Head>
@@ -35,7 +34,7 @@ export default function Home({publishedWork}) {
             </div>
             <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
               <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Published Work</h1>
-              <Card content={content.writing.content} />
+              <BoldList content={publishedWork} />
             </div>
             {content.writing.forthComing > 0 && (
               <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
