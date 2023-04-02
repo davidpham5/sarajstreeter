@@ -66,7 +66,7 @@ export default function Home({publishedWork, elsewhere}) {
 // fetch published work from Sanity
 export async function getStaticProps() {
   const publishedWork = await client.fetch(`*[_type == "published-work"]{title, url, publishedAt, publication, body}`)
-  const elsewhere = await client.fetch(`*[_type == "elsewhere"]{title, url, publishedDate, _createdAt}`)
+  const elsewhere = await client.fetch(`*[_type == "elsewhere"]{title, url, publishedDate, _createdAt, _id}`)
   return {
     props: {publishedWork, elsewhere},
   }

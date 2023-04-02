@@ -9,9 +9,9 @@ export default function BoldList ({content}) {
             content
               .sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate))
               .map((item, index) => (
-                  <span>
+                  <span key={item._id}>
                     <a className='underline decoration-A73090 hover:underline decoration-indigo-700' href={item.url} target='blank'>{item.title}.</a>
-                    <span class='italic'> {item.publication}</span> / {item.publishedDate}{" "}
+                    <span class='italic'> {item.publication}</span> / {item.publishedAt || item.publishedDate}{" "}
                   </span>
                 )
               )
