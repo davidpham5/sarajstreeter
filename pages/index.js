@@ -7,7 +7,7 @@ import client from 'lib/sanityClient'
 import Head from 'next/head'
 import content from './api/data.json'
 
-export default function Home({publishedWork}) {
+export default function Home({publishedWork, elsewhere}) {
   return (
     <div className="flex flex-col justify-center content-center px-4">
       <Head>
@@ -45,7 +45,7 @@ export default function Home({publishedWork}) {
 
             <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
               <h1 className="min-w-[240px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Elsewhere</h1>
-            <Card content={content.writing.interviews} />
+              <BoldList content={elsewhere} />
           </div>
           </div>
           <div className="flex flex-col ml-2">
@@ -66,8 +66,8 @@ export default function Home({publishedWork}) {
 // fetch published work from Sanity
 export async function getStaticProps() {
   const publishedWork = await client.fetch(`*[_type == "published-work"]{title, url, publishedAt, publication, body}`)
-
+  const elsewhere = await client.fetch(`*[_type == "elsewhere"]{title, url, publishedDate, _createdAt}`)
   return {
-    props: {publishedWork},
+    props: {publishedWork, elsewhere},
   }
 }
