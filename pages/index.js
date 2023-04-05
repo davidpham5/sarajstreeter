@@ -7,7 +7,8 @@ import client from 'lib/sanityClient'
 import Head from 'next/head'
 import content from './api/data.json'
 
-export default function Home({publishedWork, elsewhere}) {
+export default function Home({publishedWork, elsewhere, nominations, about}) {
+
   return (
     <div className="flex flex-col justify-center content-center px-4">
       <Head>
@@ -30,7 +31,7 @@ export default function Home({publishedWork, elsewhere}) {
           <div className="w-full sm:-ml-64">
            <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
               <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Nominations</h1>
-              <Card content={content.writing.nominations} />
+              <BoldList content={nominations} />
             </div>
             <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
               <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Published Work</h1>
@@ -51,7 +52,7 @@ export default function Home({publishedWork, elsewhere}) {
           <div className="flex flex-col ml-2">
             <Header title={content.about.title}/>
             <div className='max-w-3xl'>
-              <Card content={content.about.content} />
+              <Card content={about} />
             </div>
           </div>
         </section>
@@ -65,9 +66,15 @@ export default function Home({publishedWork, elsewhere}) {
 
 // fetch published work from Sanity
 export async function getStaticProps() {
-  const publishedWork = await client.fetch(`*[_type == "published-work"]{title, url, publishedAt, publication, body}`)
-  const elsewhere = await client.fetch(`*[_type == "elsewhere"]{title, url, publishedDate, _createdAt, _id}`)
-  return {
-    props: {publishedWork, elsewhere},
+  try {
+    const about = await client.fetch(`*[_type == "about"]{title, body, _id}`)
+    const publishedWork = await client.fetch(`*[_type == "published-work"]{title, url, publishedAt, publication, body, _id}`)
+    const elsewhere = await client.fetch(`*[_type == "elsewhere"]{title, url, publishedDate, _createdAt, _id}`)
+    const nominations = await client.fetch(`*[_type == "nominations"]{title, url, publishedDate, publication, _createdAt, _id}`)
+    return {
+      props: {publishedWork, elsewhere, nominations, about},
+    }
+  } catch (error) {
+    console.log(error)
   }
 }

@@ -1,15 +1,32 @@
+import {PortableText} from '@portabletext/react'
+
+const components = {
+  marks: {
+    link: ({children, value}) => {
+      const rel = !value.href.startsWith('/') ? 'noreferrer noopener' : undefined
+      return (
+        <a className='underline decoration-[#A73090] hover:underline decoration-indigo-700' href={value.href} rel={rel}>
+          {children}
+        </a>
+      )
+    },
+  },
+  block: {
+    normal: ({children}) => <p className="mb-4">{children}</p>,
+  }
+}
 export default function Card ({content}) {
   return (
     <div className="">
       <div className="w-full">
         {
           Array.isArray(content)
-            ? content.map((item, index) => {
-              return item.title
-                ? <span className="hover:underline decoration-indigo-700" key={index}><a href={item.link} target="_blank" >{item.title}</a></span>
-                : <p className="mb-4" key={index}>{item}</p>
-              })
-            : <div className='text-2xl leading-[30px] tracking-[1.25px]' dangerouslySetInnerHTML={{__html: content }}></div>
+            ? content.map((item, index) => (
+                <div className='text-2xl leading-[30px] tracking-[1.25px]' key={index}>
+                  <PortableText value={item.body} components={components} />
+                </div>
+              ))
+            : <div>Loading ...</div>
         }
       </div>
     </div>

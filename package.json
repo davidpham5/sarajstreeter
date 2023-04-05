@@ -8,6 +8,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@portabletext/react": "^2.0.2",
     "@sanity/client": "^5.4.0",
     "next": "^12.0.7",
     "react": "^17.0.2",
