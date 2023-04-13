@@ -10,7 +10,7 @@ export default function BoldList ({content}) {
               .map((item, index) => (
                   <span key={item._id}>
                     <a className='underline decoration-A73090 hover:underline decoration-indigo-700' href={item.url} target='blank'>{item.title}</a>
-                    <span className='italic'> {item.publication}</span> / {item.publishedAt || item.publishedDate} /{" "}
+                    <span className='italic'> {item.publication}</span> / {item.publishedAt || item.publishedDate} {" "}
                   </span>
                 )
               )
