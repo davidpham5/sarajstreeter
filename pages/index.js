@@ -68,9 +68,11 @@ export default function Home({publishedWork, elsewhere, nominations, about}) {
 export async function getStaticProps() {
   try {
     const about = await client.fetch(`*[_type == "about"]{title, body, _id}`)
-    const publishedWork = await client.fetch(`*[_type == "published-work"]{title, url, publishedAt, publication, body, _id}`)
+    const publishedWork = await client.fetch(`*[_type == "published-work"]{title, url, publishedAt, publication, body, _id, _createdAt}`)
+    publishedWork.sort((a, b) => new Date(b._createdAt) - new Date(a._createdAt))
     const elsewhere = await client.fetch(`*[_type == "elsewhere"]{title, url, publishedDate, _createdAt, _id}`)
     const nominations = await client.fetch(`*[_type == "nominations"]{title, url, publishedDate, publication, _createdAt, _id}`)
+
     return {
       props: {publishedWork, elsewhere, nominations, about},
     }

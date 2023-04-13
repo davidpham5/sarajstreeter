@@ -1,5 +1,4 @@
 export default function BoldList ({content}) {
-
   return (
     <div className="">
       <div className="w-full">
@@ -7,11 +6,11 @@ export default function BoldList ({content}) {
           /{" "}
           { // sort by created date
             content
-              .sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate))
+              .sort((a, b) => new Date(b.publishedDate ) - new Date(a.publishedDate))
               .map((item, index) => (
                   <span key={item._id}>
-                    <a className='underline decoration-A73090 hover:underline decoration-indigo-700' href={item.url} target='blank'>{item.title}.</a>
-                    <span className='italic'> {item.publication}</span> / {item.publishedAt || item.publishedDate}{" "}
+                    <a className='underline decoration-A73090 hover:underline decoration-indigo-700' href={item.url} target='blank'>{item.title}</a>
+                    <span className='italic'> {item.publication}</span> / {item.publishedAt || item.publishedDate} /{" "}
                   </span>
                 )
               )
