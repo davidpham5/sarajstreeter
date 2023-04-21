@@ -36,12 +36,13 @@ export default function Home({publishedWork, elsewhere, nominations, about}) {
             </div>
             <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
               <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase flex flex-row sm:flex-row-reverse mr-2">Published Work</h1>
-              <CardAlt content={content.writing.content} />
+
+              <BoldList content={elsewhere} />
             </div>
             {content.writing.forthComing > 0 && (
               <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
                 <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase mr-1">Forthcoming Work</h1>
-                <BoldList content={publishedWork} />
+                <Card content={content.writing.forthComing} />
               </div>
             )}
 
