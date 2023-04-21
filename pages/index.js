@@ -41,7 +41,7 @@ export default function Home({publishedWork, elsewhere, nominations, about}) {
             {content.writing.forthComing > 0 && (
               <div className='flex flex-col sm:flex-row mb-12 sm:mb-28'>
                 <h1 className="min-w-[265px] mt-3 text-2xl text-black mb-2 uppercase mr-1">Forthcoming Work</h1>
-                <Card content={content.writing.forthComing} />
+                <BoldList content={publishedWork} />
               </div>
             )}
 
