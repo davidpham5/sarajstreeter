@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="flex">
       <footer className="flex text-xs text-gray-500">
         <div className="relative w-28 h-42 mr-4 rounded-md">
-          <Image src={sjs_profile} layout="responsive" />
+          <Image src={sjs_profile} />
         </div>
         <div className="flex flex-col">
           <Header title={content.stayInTouch.title}/>
