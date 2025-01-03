@@ -5,6 +5,7 @@
 body {
   background-color: #F3F3F3;
   font-family: 'Helvetica', 'Helvetica Neue', sans-serif;
+  display: flex;
 }
 
 main {
