@@ -15,8 +15,6 @@ export default function Home({publishedWork, elsewhere, nominations, about}) {
       <Head>
         <title>Sara J. Streeter</title>
         <link rel="icon" href="/favicon.ico" />
-        <script defer data-domain="sarajstreeter.com" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
       </Head>
 
       <div className="lg:mx-20 flex flex-col sm:grid grid-cols-2 z-10">
